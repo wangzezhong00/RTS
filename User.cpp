@@ -1,4 +1,4 @@
-#include"User.h"
+#include "User.h"
 #include<string>
 using namespace std;
 //default constructor
@@ -51,7 +51,7 @@ void User::SetPhone(const string phone){
 }
 Student::Student(){
 }
-Student::Student(string user_name, string name, string password, Sex sex, IdType id_type, string id, string phone, string school, string stu_id):User(user_name,password,sex,id_type,id,phone),_school(school),_stu_id(stu_id){
+Student::Student(string user_name, string name, string password, Sex sex, IdType id_type, string id, string phone, string school, string stu_id):User(user_name,name,password,sex,id_type,id,phone),_school(school),_stu_id(stu_id){
 }
 string Student::GetSchool() const{
 	return _school;
